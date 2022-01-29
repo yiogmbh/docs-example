@@ -1,12 +1,8 @@
-name: Publish Documentation
+name: Check Build
 on:
-  workflow_run:
-    workflows: ["Check Build"]
-    types:
-      - completed
-    branches:
-      - master
-      - main
+  push:
+    branches-ignore:
+      - gh-pages
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -16,5 +12,4 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install -r requirements.txt
-      - run: mkdocs gh-deploy --force
-
+      - run: mkdocs build --verbose
