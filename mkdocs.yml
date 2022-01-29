@@ -1,0 +1,17 @@
+site_name: Documentation Example
+
+theme:
+  name: material
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  palette:
+    scheme: slate
+    primary: grey
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+  logo: assets/logo_yio.png
+  favicon: assets/logo_yio_favicon.png
+extra:
+  homepage: https://example.com
