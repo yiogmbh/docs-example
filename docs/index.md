@@ -10,3 +10,8 @@ if desired.
 
 We execute a pipeline to check whether the doc is able to be 
 built.
+
+## Changelog
+
+ **30.01.2022**: Pipeline improved
+ **29.01.2022**: Add changelog
