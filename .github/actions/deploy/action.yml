@@ -1,0 +1,11 @@
+# An action to deploy a new version of the documentation
+name: Deploy Documentation
+description: Use mkdocs tool to deploy a new version of your documentation (the github pages deployment is builtin).
+author: Daniel Hofstetter<dh@yio.at>
+runs:
+  using: "composite"
+  steps:
+    # simply take the mkdocs tool to deploy the documentation
+    #  as there is a builtin feature to update gh-pages branch
+    - run: mkdocs gh-deploy --force
+      shell: bash

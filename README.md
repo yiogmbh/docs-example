@@ -4,5 +4,8 @@ This repository is to test settings for several ways of how people might contrib
 
 ## Expected change
 
-We now perform changes using a pull request. Thererfore the changes
-should be possible (at least for commit)
+We now perform changes using a pull request. Thererfore the changes should be possible (at least for commit)
+
+## Todo
+
+* [x] Include a better pipeline to prevent from accidentally merging.

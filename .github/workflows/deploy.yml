@@ -1,0 +1,20 @@
+name: Publish Documentation
+on:
+  push:
+    branches:
+      - master
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      # Make use of prepare action
+      - name: Prepare Environment
+        uses: ./.github/actions/prepare
+      # Make use of build action
+      - name: Build Documentation
+        uses: ./.github/actions/build
+      # Deploy a new version
+      - name: Deploy Documentation
+        uses: ./.github/actions/deploy
