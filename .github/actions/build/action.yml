@@ -8,5 +8,5 @@ runs:
   steps:
     # simply take the mkdocs tool to build a new documentation
     #  (static content) to check if syntax is correct.
-    - shell:
-      run: mkdocs build --verbose
+    - run: mkdocs build --verbose
+      shell: bash

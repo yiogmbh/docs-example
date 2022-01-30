@@ -7,5 +7,5 @@ runs:
   steps:
     # simply take the mkdocs tool to deploy the documentation
     #  as there is a builtin feature to update gh-pages branch
-    - shell:
-      run: mkdocs gh-deploy --force
+    - run: mkdocs gh-deploy --force
+      shell: bash
