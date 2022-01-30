@@ -1,0 +1,16 @@
+name: Check Build
+on:
+  push:
+    branches-ignore:
+      - gh-pages
+jobs:
+  syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      # Make use of prepare action
+      - name: Prepare Environment
+        uses: ./.github/actions/prepare
+      # Make use of build action
+      - name: Build Documentation
+        uses: ./.github/actions/build
