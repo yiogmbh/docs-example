@@ -8,9 +8,7 @@ runs:
     # simply take the mkdocs tool to build a new documentation
     #  (static content) to check if syntax is correct.
     - uses: actions/setup-python@v2
-     with:
-       python-version: 3.x
+      with:
+        python-version: 3.x
     - shell:
       run: pip install -r requirements.txt
-
-
